@@ -23,8 +23,8 @@ SOFTWARE.
 
 */
 
-.pl-c /* comment */ {
-  color: #969896;
+.pl-c /* 969896 */ {
+  color: #3ADAB2; 
 }
 
 .pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
