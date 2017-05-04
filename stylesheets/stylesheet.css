@@ -5,6 +5,7 @@
     white-space: nowrap;
     margin-left: auto;
     margin-right: auto;
+    align-content: center;
 }
 
 .scrollmenu a {
@@ -13,6 +14,7 @@
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    align-content: center;
 }
 
 .scrollmenu a:hover {
