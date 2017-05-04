@@ -1,4 +1,16 @@
 
+.header {
+    background-color: #111;
+    overflow: auto;
+    white-space: nowrap;
+    align-content: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 180px !important;
+    position: fixed;
+}
+
+
 .scrollmenu {
     background-color: #333;
     overflow: auto;
