@@ -7,6 +7,7 @@
     margin: 0 auto;
     width: 90%;
     margin-top: 180px !important;
+    position: fixed;
 }
 
 .scrollmenu a {
