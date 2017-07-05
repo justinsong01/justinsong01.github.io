@@ -19,11 +19,15 @@
 
 }
 
-.bluehighlight {
-    color: #0080FF;
-
+.wrapper {
+  display: flex;
+  justify-content: center;
 }
 
+
+.bluehighlight {
+    color: #0080FF;
+}
 
 .right {
     position: absolute;
