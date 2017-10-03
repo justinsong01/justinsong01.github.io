@@ -1,80 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Justin Song</title>
+<html>
+<title>Justin Song's Website</title>
+<meta charset="UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-</head>
-<body class="centerbody">
-<a class="w3-bar-item w3-button w3-black w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">JUSTIN SONG</a>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/stylesheet.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d3 w3-left-align w3-large w3-black">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Justin Song</a>
+  <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="LinkedIn"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+  <a href="./files/Justin Yongju Song - Resume-v2.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resume"><i class="fa fa-file-o"></i>   Resume</a>
+  <a href="https://github.com/justinsong01" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="WorkExperience"><i class="fa fa-briefcase"></i> Work Experience</a>
+  <a href="https://github.com/justinsong01" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Github"><i class="fa fa-github"></i>  Github</a>
+  <a href="mailto:yjsong0404@gmail.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact"><i class="fa fa-envelope"></i> Contact</a>
+ </div>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content content" style="max-width:2500px;margin-top:40px"> 
+<br><br>
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center"><b>Justin Song's Profile</b></h4>
+
+         <p class="w3-center"><img src="./images/My_photo.jpg" class="w3-circle rotate" style="height:150px;width:180px" alt="image"></p>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Software Developer</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme w3-margin-right"></i> Toronto, CA</p>
+          <p><a href="./files/Justin Yongju Song - Resume-v2.pdf"><i class="fa fa-file-o fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>Resume</a></p>
+          <p><a href="https://github.com/justinsong01"><i class="fa fa-github fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>Github</a></p>
+          <p><a href="https://www.linkedin.com/in/justin-song-76a546bb/"><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>LinkedIn</a></p>
+           <p><a href="mailto:yjsong0404@gmail.com"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>yjsong0404@gmail.com</a>
+         </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Skills --> 
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p><b> Software Skills</b></p>
+          <p>
+            <span class="w3-tag w3-small ">Java</span>
+            <span class="w3-tag w3-small ">Python</span>
+            <span class="w3-tag w3-small ">C</span>
+            <span class="w3-tag w3-small ">Javascript</span>
+            <span class="w3-tag w3-small ">HTML5</span>
+            <span class="w3-tag w3-small ">AngularJS</span>
+            <span class="w3-tag w3-small ">Unity</span>
+            <span class="w3-tag w3-small ">C#</span>
+            <span class="w3-tag w3-small ">CSS</span>
+            <span class="w3-tag w3-small ">PHP7</span>
+            <span class="w3-tag w3-small ">DB2</span>
+            <span class="w3-tag w3-small ">Oracle</span>
+            <span class="w3-tag w3-small ">postgreSQL</span>
+            <span class="w3-tag w3-small ">XML</span>
+            <span class="w3-tag w3-small ">Xquery</span>
+            <span class="w3-tag w3-small ">Verilog</span>
+            <span class="w3-tag w3-small ">Fireworks</span>
+            <span class="w3-tag w3-small ">Dreamweavers</span>
+ 
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p><b> Support/Platform Skills</b></p>
+          <p>
+            <span class="w3-tag w3-small ">AIX</span>
+            <span class="w3-tag w3-small ">RedHat</span>
+            <span class="w3-tag w3-small ">Ubuntu</span>
+            <span class="w3-tag w3-small ">Power Server</span>
+            <span class="w3-tag w3-small ">Windows</span>
+            <span class="w3-tag w3-small ">Maven</span>
+            <span class="w3-tag w3-small ">Git</span>
+          </p>
+        </div>
+      </div>
+      <br>
+
+    
+          <!-- Interests --> 
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p><b>Interests</b></p>
+          <p>
+            <span class="w3-tag w3-small ">AI</span>
+            <span class="w3-tag w3-small ">Web Development</span>
+            <span class="w3-tag w3-small ">Game Development</span>
+            <span class="w3-tag w3-small ">Data Analytics</span>
+            <span class="w3-tag w3-small ">DevOps</span>
+          </p>
+        </div>
+      </div>
+      <br>
+
+        <!-- Courses --> 
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p><b>Courses</b></p>
+          <p>
+            <span class="w3-tag w3-small ">Numerical Methods</span>
+            <span class="w3-tag w3-small ">Principles of Programming Languages</span>
+            <span class="w3-tag w3-small ">Algorithm Design & Analysis</span>
+            <span class="w3-tag w3-small ">Operating Systems</span>
+            <span class="w3-tag w3-small ">Introduction to Databases</span>
+            <span class="w3-tag w3-small ">The Design of Interactive Computational Media</span>
+            <span class="w3-tag w3-small ">Computers and Society Design </span>
+            <span class="w3-tag w3-small ">Design & Analysis of Data Structures</span>
+            <span class="w3-tag w3-small ">Analysis of Data Structures</span>
+            <span class="w3-tag w3-small ">Introduction to the Theory of Computation</span>
+            <span class="w3-tag w3-small ">Reasoning Introduction to Computer Science</span>
+            <span class="w3-tag w3-small ">Introduction to Computer Programming</span>
+          </p>
+        </div>
+      </div>
+      <br>
+    <!-- End Left Column -->
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav sansserif">
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  &nbsp;Home</a></li>
-      <li><a href="./Justin Song - Resume.docx"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
-      <li><a href="https://www.linkedin.com/in/justin-song-76a546bb/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true" style="font-size:20px;"></i> LinkedIn</a></li>
-      <li><a href="https://github.com/justinsong01"><i class="fa fa-github fa-2x" aria-hidden="true" style="font-size:20px;"></i> Github</a></li>
-      <li><a href="./workExperience.html"><span class="glyphicon glyphicon-briefcase"></span> &nbsp;Work Experience</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> &nbsp;Contact</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog (Coming Soon!)<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sample Post 1</a></li>
-            <li><a href="#">Sample Post 2</a></li>
-            <li><a href="#">Sample Post 3</a></li>
-          </ul>
-      </li>
-      <li><a href="mailto:yjsong0404@gmail.com">
-        <span class="glyphicon glyphicon-envelope"></span> Email
-        </a>
-      </li>
-    </ul>
-    </div>
+    
+ <div class="w3-col m9">
 
-
-  </div>
-<div id="nav1" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
-</div></nav>
-
-<div class="container">
-<!--
-  <div class="col-md-2 flexbox-item fill-area flexbox-item-grow">
-  <p>HII</p>
-    </div> -->
-  <div class="col-md-12 flexbox-item fill-area-col flexbox-item-grow content w3-round-large">
-  <h2><b>Welcome!</b></h2>
-  <p>I'm currently working as a Software Devloper intern at IBM Master Data Management where for the most of time, I am dealing with Continuous Integration pipeline and managing our team's BVT and the website that I developed for managing its result on UI.</p>
-  </div>
-
-  <div class="col-md-12 flexbox-item fill-area-col flexbox-item-grow content w3-round-large">
-  <h4><b>About me</b></h4>
-  <p>I am currently pursuing a Bachelor of Science Degree in Computer Science at the Univeristy of Toronto with a major in Statistics. I will be returning to UofT in Jan 2018 to continue my 3rd year of the undergraduate. <br><br>
+      
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
+        <div class="grey_background"><br>
+        <span class="w3-right w3-opacity"></span>
+        <h2><b>About Me</b></h2>
+        <hr class="w3-clear">
+      </div>
+          <p>I'm currently working as a Software Developer intern at IBM Master Data Management where for the most of time, I am dealing with Continuous Integration pipeline and managing our team's BVT and the website that I developed for managing its result on UI.</p>
+          <img src="./images/uoft-logo.png" align="left" style="height:150px;width:150px" alt="image"></p>
+          <p>I am currently pursuing a Bachelor of Science Degree in Computer Science at the Univeristy of Toronto with a major in Statistics. I will be returning to UofT in January 2018 to continue my 3rd year of the undergraduate. <br><br>
   I love computer science and all of its related topics. My main interests are in AI, Web Development, DevOps, and Machine learning. Some of my hobbies during my leisure time include watching a drama, soccer, and reading sci-fi novels.  
-  </p>
-  </div>
-
-    <div class="col-md-12 flexbox-item fill-area-col flexbox-item-grow content w3-round-large">
-  <h4><b>Work Experience Summary</b></h4>
-  <p>I have worked in various workplaces and research since Secondary School and here are the list of it. For more detail, please visit my <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="bluehighlight"><u>LinkedIn</u></a> or <a href="./workExperience.html" class="bluehighlight"><u>My Work Experience Page</u></a>
+  </p><br>
+      </div>
+      
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
+        <div class="grey_background"><br>
+        <h2><b>Work Experiences</b></h2>
+        <hr class="w3-clear">
+      </div>
+          <p>I have worked in various workplaces and research since Secondary School and here are the list of it. For more detail, please check out my <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="bluehighlight"><u>LinkedIn</u></a> or <a href="./files/Justin Yongju Song - Resume-v2.pdf" class="bluehighlight"><u>Resume</u></a>.
   <br>
   <ul>
     <li>IBM &ndash; Master Data Management Software Developer Intern</li>
@@ -87,20 +175,44 @@
   </ul>
   As shown above, I am always eager to take a new challenge and make that opportunity to improve my skills and experience. Moreover, I am always pleased to get a new internship offer!
   </p>
+      </div>  
+      
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
+        <div class="grey_background"><br>
+        <h2><b>Projects</b></h2>
+        <hr class="w3-clear">
+      </div>
+        <p>All of my project can be view on my <a href="https://github.com/justinsong01" class="bluehighlight"><u>Github Account</u></a>.
+        <ul>
+    <li>Angular UI Development &ndash; In progress, still working on fixing its UI.</li>
+    <li>Unity Card Mat Drop & Drag &ndash; Gameboard mat that can drag and drop the cards, used C# and Unity 3d framework</li>
+    <li>Unity Score Ball Game&ndash; My first Unity project with C# and Unity 3D platform that has the ball track the number of coin it picked up.</li>
+    <li>AngularJS Minesweeper&ndash; My first Angular JS app game embedded with HTML</li> 
+    <li>Old Github Website &ndash; My first website building using CSS, JavaScript, Bootstrap and HTML</li>
+  </ul></p>
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+  <!-- End Grid -->
   </div>
+  
+<!-- End Page Container -->
 </div>
 
-</body>
 <br>
-<footer class="w3-center blackback w3-padding-16 w3-round-large footer">
- <a href="#" class="w3-button w3-black w3-padding-large"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Copyright to <a href="#" title="Justin Song" target="_blank" >Justin Song</a></p>
-</footer>
 
-<script type="text/javascript">
-  
-  function myFunction() {
-    var x = document.getElementById("nav1");
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <h5></h5>
+</footer>
+ 
+<script>
+// Accordion
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else { 
@@ -109,4 +221,5 @@
 }
 </script>
 
-</html>
+</body>
+</html> 
