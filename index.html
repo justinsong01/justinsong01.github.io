@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+<script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -164,7 +166,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>
           <p>I have worked in various workplaces and research since Secondary School and here are the list of it. For more detail, please check out my <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="bluehighlight"><u>LinkedIn</u></a> or <a href="./files/Justin Yongju Song - Resume-v2.pdf" class="bluehighlight"><u>Resume</u></a>.
   <br>
-  <ul>
+    <ul>
     <li>IBM &ndash; Master Data Management Software Developer Intern</li>
     <li>UofT iGEM &ndash; Summer Dry Lab Software Developer & Researcher</li>
     <li>UofT Computer Science Dept. &ndash; CS Ambassador & Event Assistant</li>
@@ -175,7 +177,61 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
   </ul>
   As shown above, I am always eager to take a new challenge and make that opportunity to improve my skills and experience. Moreover, I am always pleased to get a new internship offer!
   </p>
+  <div>
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <h3>MDM Software Developer, <i>IBM Canada Ltd.</i></h3>
+        <p>Sept 2016 - Present</p>
+        <img src="./images/ibm.png" style="width:100%">
+        <div class="text">Caption TextIBM</div>
+        <p><ul>
+          <li>Developed and managed the BVT results through Continuous Integration Pipeline User Interface. Used PHP7, HTML, Java, JavaScript(JQuery, JSON), DataTables, CSS to implement a basic. Also used Ubuntu server to host this with DB2 to handle, store, and update an incoming data.</li>
+          <li>Improved CI pipeline for MDM delivery team through Jenkins and Cronjob on all platforms (AIX, RHEL, Ubuntu) using Java, and Perl Script.</li>
+          <li>Made an improvement of MDMInstallAssistant Tooling which uses pom.xml and response file through Installation Manager in a console mode.</li>
+          <li>Implemented a slack App through shell scripting with slack-Web hook integrations API (with a bit of JSON) to notify the BVT result whenever the new build's installation and testing complete</li>
+          <li>Improved a sshd connection and communication between Cygwins (Windows VM) and AIX/Linux(RHEL, Ubuntu) machines.</li>
+          <li>Troubleshooted any installation failures relating to MDM product and resolved the problem.</li>
+          <li>Troubleshoot any DB related issues (mostly on ORACLE database) </li>
+        </ul></p>
+    </div>
+    <div class="mySlides">
+      <h3>Summer Software Developer & Researcher, <i>University of Toronto</i></h3>           
+      <p>May 2015 - Oct 2015</p>
+      <img src="./images/igem.png" style="width:100%">
+      <div class="text">Caption Two</div>
+        <p><ul>
+          <li>Developed and managed the website of UofT iGEM 2015 for the showcase (mostly used Javascript(AngularJS), HTML, CSS).</li>
+          <li>Researched about impacts of oil sand pond in Alberta and its surrounding biome as a background research.</li>
+          <li>Developed the Framework of the ConsortiaFlux Interface using BioJava, D3.js and Javascript interacting with Node and Edges.</li>
+          <li>Received the 2nd place at the iGEM 2015 Competition that was held in Boston, US for the recongition of our project and proposals.</li>
+        </ul>
+        For more details about the project, please visit <a href="http://2015.igem.org/Team:Toronto/Software" class="bluehighlight"><u>http://2015.igem.org/Team:Toronto/Software</u></a><br>
+        For more details about the iGEM competition, please visit <a href="http://igem.org/Main_Page" class="bluehighlight"><u>http://igem.org/Main_Page</u></a>
+        </p>
+    </div>
+    <div class="mySlides">
+      <h3>Cast Assistant & Web Developer, <i>Toronto 2015 PanAm & ParaPanAm Games</i></h3>           
+      <p>April 2015 - Aug 2015</p>
+      <img src="./images/panam.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+      <p>
+      <ul>
+        <li>As a cast assistant, assited opening and closing ceremonies for both Pan Am and Para Pan Am games 2015.</li>
+        <li>Managed and developed the webpage for Toronto 2015 Pan Am Games Volunteer Portal using HTML, JavaScript(mostly JSON and Jquery) and CSS (bootstrap) &ndash; <a href="https://volunteer.toronto2015.org/Portal/index.cfm/volunteer/login" class="bluehighlight"><u> https://volunteer.toronto2015.org/Portal/index.cfm/volunteer/login</u>. </a> However as of Dec 2015, the host webpage was disabled and removed. The portal was used to inform other volunteers about meet up places for cermony practices and their assigned location for helping out events throughout events in Summer 2015.</li>
+      </ul>
+      For more details about events, please visit <a href="http://www.toronto2015.org/" class="bluehighlight"><u>http://www.toronto2015.org/</u></a>.<br> 
+      </p>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
       </div>  
+      </div>
       
       <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
         <div class="grey_background"><br>
@@ -218,6 +274,33 @@ function openNav() {
     } else { 
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }
 </script>
 
