@@ -11,24 +11,24 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="js/Main.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+
 </style>
 <body class="w3-theme-l5">
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d3 w3-left-align w3-large w3-black">
+ <div class="w3-bar navbar-collapse w3-theme-d3 w3-left-align w3-large w3-black">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Justin Song</a>
   <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="LinkedIn"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
   <a href="./files/Justin Yongju Song - Resume-v2.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resume"><i class="fa fa-file-o"></i>   Resume</a>
-  <a href="https://github.com/justinsong01" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="WorkExperience"><i class="fa fa-briefcase"></i> Work Experience</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small experienceBar w3-padding-large w3-hover-white" title="WorkExperience"><i class="fa fa-briefcase"></i> Experience</a>
   <a href="https://github.com/justinsong01" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Github"><i class="fa fa-github"></i>  Github</a>
   <a href="mailto:yjsong0404@gmail.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact"><i class="fa fa-envelope"></i> Contact</a>
  </div>
@@ -157,11 +157,12 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           <p>I am currently pursuing a Bachelor of Science Degree in Computer Science at the Univeristy of Toronto with a major in Statistics. I will be returning to UofT in January 2018 to continue my 3rd year of the undergraduate. <br><br>
   I love computer science and all of its related topics. My main interests are in AI, Web Development, DevOps, and Machine learning. Some of my hobbies during my leisure time include watching a drama, soccer, and reading sci-fi novels.  
   </p><br>
+  <div class="workExperience"></div>
       </div>
       
       <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
         <div class="grey_background"><br>
-        <h2><b>&nbsp;Work Experiences</b></h2>
+        <h2><b>Work Experiences</b></h2>
         <hr class="w3-clear">
       </div>
           <p>I have worked in various workplaces and research since Secondary School and here are the list of it. For more detail, please check out my <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="bluehighlight"><u>LinkedIn</u></a> or <a href="./files/Justin Yongju Song - Resume-v2.pdf" class="bluehighlight"><u>Resume</u></a>.
@@ -177,7 +178,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
   </ul>
   As shown above, I am always eager to take a new challenge and make that opportunity to improve my skills and experience. Moreover, I am always pleased to get a new internship offer!<hr>
   </p>
-  
+
   <div>
     <div class="slideshow-container">
       <div class="mySlides">
@@ -211,7 +212,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         </p>
     </div>
     <div class="mySlides">
-      <h3>Cast Assistant & Web Developer, <i>Toronto 2015 PanAm & ParaPanAm Games</i></h3>           
+      <h3>Cast Assistant & Web Developer, <i>Toronto 2015 PanAm Games</i></h3>           
       <p>April 2015 - Aug 2015</p>
       <img src="./images/panam.jpg" style="width:100%">
       <div class="text">Caption Three</div>
@@ -236,7 +237,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       
       <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
         <div class="grey_background"><br>
-        <h2><b>&nbsp;Projects</b></h2>
+        <h2><b>Projects</b></h2>
         <hr class="w3-clear">
       </div>
         <p>All of my project can be view on my <a href="https://github.com/justinsong01" class="bluehighlight"><u>Github Account</u></a>.
@@ -261,13 +262,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 <br>
 
 <!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16">
-  <h5></h5>
+<footer class="w3-container w3-black w3-padding-16"><a href="#" class="scrollbox" title="Scroll to top"><p>Click to go to top of the page</p><img src="./images/up.png" style="width:1%"/></a>
 </footer>
  
 <script>
-// Accordion
-// Used to toggle the menu on smaller screens when clicking on the menu button
+
 function openNav() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
@@ -276,6 +275,13 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+$(".experienceBar").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".workExperience").offset().top},
+        'slow');
+});
+
 
 var slideIndex = 1;
 showSlides(slideIndex);
