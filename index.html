@@ -1,338 +1,53 @@
 <!DOCTYPE html>
 <html>
-<title>Justin Song's Website</title>
-<meta charset="UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script type="text/javascript" src="js/Main.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="CSS/stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<head>
+  <title>Justin Song's Website</title>
+  <link rel='stylesheet' href='lib/bootstrap/css/bootstrap.css'/>
+  <link rel='stylesheet' href='lib/Hover-master/css/hover.css'/>
+  <link rel='stylesheet' href='css/style.css'/>
+  <link rel='stylesheet' href='css/me.css'/>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Roboto|Baloo+Bhaina" rel="stylesheet">
+  <script type="text/javascript" src="./lib/loader.js"></script>
+  <script src="./lib/jquery-3.1.1.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/angular-1.6.2/angular.js"></script>
+  <script src="./js/canvas_draw.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/myApp.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20" ng-app="myApp">
 
-</style>
-<body class="w3-theme-l5">
+<div class="return_to_top">
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar navbar-collapse w3-theme-d3 w3-left-align w3-large w3-black">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Justin Song</a>
-  <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="LinkedIn"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-  <a href="./files/Justin Song - Resume.pdf" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Resume"><i class="fa fa-file-o"></i>   Resume</a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small experienceBar w3-padding-large w3-hover-white" title="WorkExperience"><i class="fa fa-briefcase"></i> Experience</a>
-  <a href="https://github.com/justinsong01" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Github"><i class="fa fa-github"></i>  Github</a>
-  <a href="mailto:yjsong0404@gmail.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact"><i class="fa fa-envelope"></i> Contact</a>
- </div>
 </div>
- 
-<!-- Page Container -->
-<div class="w3-container w3-content content" style="max-width:2500px;margin-top:40px"> 
-<br><br>
-  <!-- The Grid -->
-  <div class="w3-row">
-    <!-- Left Column -->
-    <div class="w3-col m3">
-      <!-- Profile -->
-      <div class="w3-card-2 w3-round w3-white">
-        <div class="w3-container">
-         <h4 class="w3-center grey_background"><b>Justin Song's Profile</b></h4>
+<header>
+  <div class=""><div class="center" style="text-align:center; background-color: #78a1b4; color: white;">  <b><center><br> <h1>Justin Yongju Song</h1></b></center><br></div></div>
+  <h2 id="top_screen"></h2>
+  <canvas id="front_page_canvas" class="hidden-xs"></canvas>
+  <div class="text-center icons_container">
+    <a target="_blank" href="https://www.linkedin.com/in/justin-song-76a546bb/">
+      <img class="header_icon" src="./imgs/linked_in.png"></a>
+    <a target="_blank" href="https://github.com/justinsong01">
+      <img class="header_icon" src="./imgs/github.png"></a>
+    <a target="_blank" href="mailto:yjsong0404@gmail.com">
+      <img class="header_icon" src="./imgs/email.png"></a>
+    <div><a href="./Justin_Yongju_Song's_Resume-2019-09.pdf" download>
+      <div class="download_resume_btn">View Resume</div>
+    </a></div>
+    <div>
+      <div class="next_pg_container">
+        <a class="glyphicon glyphicon-hand-up next_pg bounce hvr-wobble-vertical" href="#about"></a>
 
-         <p class="w3-center"><img src="./images/My_photo.jpg" class="w3-circle rotate" style="height:150px;width:180px" alt="image"></p>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Software Developer</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme w3-margin-right"></i> Toronto, CA</p>
-          <p><a href="./files/Justin Song - Resume.pdf"><i class="fa fa-file-o fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>Resume</a></p>
-          <p><a href="https://github.com/justinsong01"><i class="fa fa-github fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>Github</a></p>
-          <p><a href="https://www.linkedin.com/in/justin-song-76a546bb/"><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>LinkedIn</a></p>
-           <p><a href="mailto:yjsong0404@gmail.com"><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme w3-margin-right"></i>yjsong0404@gmail.com</a>
-         </p>
-        </div>
       </div>
-      <br>
-      
-      <!-- Skills --> 
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p><b> Software Skills</b></p>
-          <p>
-            <span class="w3-tag w3-small ">Java</span>
-            <span class="w3-tag w3-small ">Python</span>
-            <span class="w3-tag w3-small ">C</span>
-            <span class="w3-tag w3-small ">Javascript</span>
-            <span class="w3-tag w3-small ">HTML5</span>
-            <span class="w3-tag w3-small ">AngularJS</span>
-            <span class="w3-tag w3-small ">Unity</span>
-            <span class="w3-tag w3-small ">C#</span>
-            <span class="w3-tag w3-small ">CSS</span>
-            <span class="w3-tag w3-small ">PHP7</span>
-            <span class="w3-tag w3-small ">DB2</span>
-            <span class="w3-tag w3-small ">Oracle</span>
-            <span class="w3-tag w3-small ">postgreSQL</span>
-            <span class="w3-tag w3-small ">XML</span>
-            <span class="w3-tag w3-small ">Xquery</span>
-            <span class="w3-tag w3-small ">Verilog</span>
-            <span class="w3-tag w3-small ">Fireworks</span>
-            <span class="w3-tag w3-small ">Dreamweavers</span>
- 
-          </p>
-        </div>
-      </div>
-      <br>
-
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p><b> Support/Platform Skills</b></p>
-          <p>
-            <span class="w3-tag w3-small ">AIX</span>
-            <span class="w3-tag w3-small ">RedHat</span>
-            <span class="w3-tag w3-small ">Ubuntu</span>
-            <span class="w3-tag w3-small ">Power Server</span>
-            <span class="w3-tag w3-small ">Windows</span>
-            <span class="w3-tag w3-small ">Maven</span>
-            <span class="w3-tag w3-small ">Git</span>
-          </p>
-        </div>
-      </div>
-      <br>
-
-    
-          <!-- Interests --> 
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p><b>Interests</b></p>
-          <p>
-            <span class="w3-tag w3-small ">AI</span>
-            <span class="w3-tag w3-small ">Web Development</span>
-            <span class="w3-tag w3-small ">Game Development</span>
-            <span class="w3-tag w3-small ">Data Analytics</span>
-            <span class="w3-tag w3-small ">DevOps</span>
-          </p>
-        </div>
-      </div>
-      <br>
-
-        <!-- Courses --> 
-      <div class="w3-card-2 w3-round w3-white w3-hide-small">
-        <div class="w3-container">
-          <p><b>Courses</b></p>
-          <p>
-            <span class="w3-tag w3-small ">Numerical Methods</span>
-            <span class="w3-tag w3-small ">Principles of Programming Languages</span>
-            <span class="w3-tag w3-small ">Algorithm Design & Analysis</span>
-            <span class="w3-tag w3-small ">Operating Systems</span>
-            <span class="w3-tag w3-small ">Introduction to Databases</span>
-            <span class="w3-tag w3-small ">The Design of Interactive Computational Media</span>
-            <span class="w3-tag w3-small ">Computers and Society Design </span>
-            <span class="w3-tag w3-small ">Design & Analysis of Data Structures</span>
-            <span class="w3-tag w3-small ">Analysis of Data Structures</span>
-            <span class="w3-tag w3-small ">Introduction to the Theory of Computation</span>
-            <span class="w3-tag w3-small ">Reasoning Introduction to Computer Science</span>
-            <span class="w3-tag w3-small ">Introduction to Computer Programming</span>
-          </p>
-        </div>
-      </div>
-      <br>
-    <!-- End Left Column -->
     </div>
-    
- <div class="w3-col m9">
 
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
-        <div class="grey_background"><br>
-        <span class="w3-right w3-opacity"></span>
-        <h2><b>&nbsp;About Me</b></h2>
-        <hr class="w3-clear">
-      </div>
-          <p>I'm currently working as a Software Developer intern at IBM Master Data Management where for the most of time, I am dealing with Continuous Integration pipeline and managing our team's BVT and the website that I developed for managing its result on UI.</p>
-          <img src="./images/uoft-logo.png" align="left" style="height:150px;width:150px" alt="image"></p>
-          <p>I am currently pursuing a Bachelor of Science Degree in Computer Science at the Univeristy of Toronto with a major in Statistics. I will be returning to UofT in January 2018 to continue my 3rd year of the undergraduate. <br><br>
-  I love computer science and all of its related topics. My main interests are in AI, Web Development, DevOps, and Machine learning. Some of my hobbies during my leisure time include watching a drama, soccer, and reading sci-fi novels.  
-  </p><br>
-  <div class="workExperience"></div>
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
-        <div class="grey_background"><br>
-        <h2><b>&nbsp;Work Experiences</b></h2>
-        <hr class="w3-clear">
-      </div>
-          <p>I have worked in various workplaces and research since Secondary School and here are the list of it. For more detail, please check out my <a href="https://www.linkedin.com/in/justin-song-76a546bb/" class="bluehighlight"><u>LinkedIn</u></a> or <a href="./files/Justin Song - Resume.pdf" class="bluehighlight"><u>Resume</u></a>.
-  <br>
-    <ul>
-    <li>IBM &ndash; Master Data Management Software Developer Intern</li>
-    <li>UofT iGEM &ndash; Summer Dry Lab Software Developer & Researcher</li>
-    <li>UofT Computer Science Dept. &ndash; CS Ambassador & Event Assistant</li>
-    <li>Toronto 2015 PanAm & ParaPanAm Games &ndash; Cast Assistant & Web Developer</li> 
-    <li>John's Juke Engineering Supplier &ndash; Hardware Repair Assistant</li>
-    <li>Freek Geek Vancouver &ndash; Technician Intern</li>
-    <li>Computers for School &ndash; Software Lab Student Intern</li> 
-  </ul>
-  As shown above, I am always eager to take a new challenge and make that opportunity to improve my skills and experience. Moreover, I am always pleased to get a new internship offer!<hr>
-  </p>
-
-  <div>
-    <div class="slideshow-container">
-      <div class="mySlides">
-        <h3>MDM Software Developer, <i>IBM Canada Ltd.</i></h3>
-        <p>Sept 2016 - Present</p>
-        <img src="./images/ibm.png" style="width:100%">
-        <div class="text">Caption TextIBM</div>
-        <p><ul>
-          <li>Developed and managed the BVT results through Continuous Integration Pipeline User Interface. Used PHP7, HTML, Java, JavaScript(JQuery, JSON), DataTables, CSS to implement a basic. Also used Ubuntu server to host this with DB2 to handle, store, and update an incoming data.</li>
-          <li>Improved CI pipeline for MDM delivery team through Jenkins and Cronjob on all platforms (AIX, RHEL, Ubuntu) using Java, and Perl Script.</li>
-          <li>Made an improvement of MDMInstallAssistant Tooling which uses pom.xml and response file through Installation Manager in a console mode.</li>
-          <li>Implemented a slack App through shell scripting with slack-Web hook integrations API (with a bit of JSON) to notify the BVT result whenever the new build's installation and testing complete</li>
-          <li>Improved a sshd connection and communication between Cygwins (Windows VM) and AIX/Linux(RHEL, Ubuntu) machines.</li>
-          <li>Troubleshooted any installation failures relating to MDM product and resolved the problem.</li>
-          <li>Troubleshoot any DB related issues (mostly on ORACLE database) </li>
-        </ul></p>
-    </div>
-    <div class="mySlides">
-      <h3>Summer Software Developer & Researcher, <i>University of Toronto</i></h3>           
-      <p>May 2015 - Oct 2015</p>
-      <img src="./images/igem.png" style="width:100%">
-      <div class="text">Caption Two</div>
-        <p><ul>
-          <li>Developed and managed the website of UofT iGEM 2015 for the showcase (mostly used Javascript(AngularJS), HTML, CSS).</li>
-          <li>Researched about impacts of oil sand pond in Alberta and its surrounding biome as a background research.</li>
-          <li>Developed the Framework of the ConsortiaFlux Interface using BioJava, D3.js and Javascript interacting with Node and Edges.</li>
-          <li>Received the 2nd place at the iGEM 2015 Competition that was held in Boston, US for the recongition of our project and proposals.</li>
-        </ul>
-        For more details about the project, please visit <a href="http://2015.igem.org/Team:Toronto/Software" class="bluehighlight"><u>http://2015.igem.org/Team:Toronto/Software</u></a><br>
-        For more details about the iGEM competition, please visit <a href="http://igem.org/Main_Page" class="bluehighlight"><u>http://igem.org/Main_Page</u></a>
-        </p>
-    </div>
-    <div class="mySlides">
-      <h3>Cast Assistant & Web Developer, <i>Toronto 2015 PanAm Games</i></h3>           
-      <p>April 2015 - Aug 2015</p>
-      <img src="./images/panam.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-      <p>
-      <ul>
-        <li>As a cast assistant, assited opening and closing ceremonies for both Pan Am and Para Pan Am games 2015.</li>
-        <li>Managed and developed the webpage for Toronto 2015 Pan Am Games Volunteer Portal using HTML, JavaScript(mostly JSON and Jquery) and CSS (bootstrap) &ndash; <a href="https://volunteer.toronto2015.org/Portal/index.cfm/volunteer/login" class="bluehighlight"><u> https://volunteer.toronto2015.org/Portal/index.cfm/volunteer/login</u>. </a> However as of Dec 2015, the host webpage was disabled and removed. The portal was used to inform other volunteers about meet up places for cermony practices and their assigned location for helping out events throughout events in Summer 2015.</li>
-      </ul>
-      For more details about events, please visit <a href="http://www.toronto2015.org/" class="bluehighlight"><u>http://www.toronto2015.org/</u></a>.<br> 
-      </p>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div><br>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-          </div>
-      </div>  
-      </div>
-      
-      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
-        <div class="grey_background"><br>
-        <h2><b>&nbsp;Projects</b></h2>
-        <hr class="w3-clear">
-      </div>
-      <p>All of my project can be view on <a href="https://github.com/justinsong01" class="bluehighlight"><u>https://github.com/justinsong01</u></a>
-  <p><b>Hadoop</b></p>
-    <ul>
-      <li>Current Trend Tracker &ndash;Currently developing a current trend tracker that reads from data which is in .csv file format to analyze its trend using Hadoop. (In development)</li>
-    </ul>   
-  <p><b>AngularJS</b></p>
-    <ul>
-      <li>Angular UI Developments &ndash;Working on UI using Angular JS to support multi clients form submission through MYSQL</li>
-      <li>AngularJS Minesweeper&ndash; My first Angular JS app game embedded with HTML</li>
-    </ul>
-  <p><b>Unity & C# Projects</b></p><ul>
-      <li>Unity Card Mat Drop & Drag &ndash; Gameboard mat that can drag and drop the cards, used C# and Unity 3d framework</li>
-      <li>Unity Score Ball Game&ndash; My first Unity project with C# and Unity 3D platform that has the ball track the number of coin it picked up.</li>
-    </ul>
-  <p><b>Google App Script Project with Youtube</b></p>
-    <ul>
-      <li>Youtube Auto Subscription Adder &ndash; using Google SpreadSheet App API, Google App Script (.gs file), and Java embedded with HTML that adds a youtube playlist.</li>
-    </ul>
-  <p><b>Maven Plugins</b></p>
-    <ul>
-      <li>Maven Plugin for Java Spring Framework  &ndash; developed using java, Maven Concepts, pom.xml and .iml concept</li>
-    </ul>
-  <p><b>Microsoft Hackathon 2016</b></p>
-    <ul>
-      <li>MS Slack System Notifier &ndash; Developed a slack Application which communicates with Microsoft Azure microservices API to inform the changes made throughout the system.</li>
-    </ul>
-  <p><b>Personal Website (Old)</b></p>
-    <ul>
-      <li>Old Github Website &ndash; My first website building using CSS, JavaScript, Bootstrap and HTML</li>
-    </ul>
-  </p>
-      </div> 
-      
-    <!-- End Middle Column -->
-    </div>
-    
-  <!-- End Grid -->
   </div>
-  
-<!-- End Page Container -->
-</div>
-
-<br>
-
-<!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16"><a href="#" class="scrollbox" title="Scroll to top"><p>Click to go to top of the page</p><img src="./images/up.png" style="width:1%"/></a>
+</header>
+<footer>
+  <div class="text-center">Justin Song 2019.
+  </div>
 </footer>
- 
-<script>
-
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-$(".experienceBar").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".workExperience").offset().top},
-        'slow');
-});
-
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
 </body>
-</html> 
+</html>
